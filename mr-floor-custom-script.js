@@ -530,3 +530,10 @@ function changeToNextText() {
     let _text = $(".slick-slide.slick-current.slick-active").next().next().find(".speciality-bottom-title").text();
     $(".speciality-slider .get-direction.slick-arrow").find(".pos-relative").text(_text);
 }
+
+
+function changeWishlishNumberBG () {
+  if(sessionStorage.getItem('wishlist') !== null) {
+    $(".wishlist-item-count").addClass("active");
+  }
+}
